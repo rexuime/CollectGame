@@ -33,9 +33,9 @@ TrafficSim/
 
 ├── tests/ # (Optional) Unit test files (e.g., test_car.cpp) 
 
-├── main.cpp # Entry point for running the simulation 
-├── Makefile # Build configuration 
-└── README.md # Project documentation
+├── main.cpp   # Entry point for running the simulation 
+├── Makefile   # Build configuration 
+└── README.md   # Project documentation
 
 ---
 
@@ -43,9 +43,9 @@ TrafficSim/
 
 To build and run the project, make sure you have a C++ compiler (like `g++`) and `make` installed.
 
-- make            # Compiles the main simulation and test files
-- ./bin/main      # Runs the simulation
-- make clean      # Removes compiled binaries and object files
+- make              # Compiles the main simulation and test files
+- ./bin/main        # Runs the simulation
+- make clean        # Removes compiled binaries and object files
 
 ---
 
