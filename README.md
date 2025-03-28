@@ -43,10 +43,9 @@ TrafficSim/
 
 To build and run the project, make sure you have a C++ compiler (like `g++`) and `make` installed.
 
-'''bash
-make            # Compiles the main simulation and test files
-./bin/main      # Runs the simulation
-make clean      # Removes compiled binaries and object files
+- make            # Compiles the main simulation and test files
+- ./bin/main      # Runs the simulation
+- make clean      # Removes compiled binaries and object files
 
 ---
 
