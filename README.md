@@ -52,28 +52,20 @@ make clean      # Removes compiled binaries and object files
 
 ## 🎯 Goals of This Project
 
-Practice and reinforce core C++ skills
-
-Build clean, modular, and maintainable code
-
-Lay the foundation for more complex simulations in the future
-
-Get comfortable using make, headers, and organizing larger projects
-
-Experiment with logic-heavy systems (traffic flow, signaling, yielding)
+- Practice and reinforce core C++ skills
+- Build clean, modular, and maintainable code
+- Lay the foundation for more complex simulations in the future
+- Get comfortable using make, headers, and organizing larger projects
+- Experiment with logic-heavy systems (traffic flow, signaling, yielding)
 
 ---
 
 ## 🔧 Possible Future Expansions
 
-Add more intersection types (e.g., T-junction, roundabout)
-
-Implement pedestrian systems or sensor-based triggers
-
-Include traffic congestion simulation and dynamic rerouting
-
-Add visual output using SDL2 or ImGui
-
-Integrate unit testing using Catch2 or a similar framework
+- Add more intersection types (e.g., T-junction, roundabout)
+- Implement pedestrian systems or sensor-based triggers
+- Include traffic congestion simulation and dynamic rerouting
+- Add visual output using SDL2 or ImGui
+- Integrate unit testing using Catch2 or a similar framework
 
 ---
