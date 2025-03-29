@@ -33,4 +33,4 @@ $(BIN_DIR):
 
 # ─── Clean ──────────────────────────────────────────────────────
 clean:
-	rm -rf $(BIN_DIR)
+	rm -f $(BIN_DIR)/main.exe
