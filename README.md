@@ -19,6 +19,7 @@
 
 TrafficSim/ 
 
+```
 ├── include/ # Header files (class declarations) │ 
 ├── Car.h │ \
 ├── Interface.h │ 
@@ -38,7 +39,7 @@ TrafficSim/
 ├── main.cpp   # Entry point for running the simulation 
 ├── Makefile   # Build configuration 
 └── README.md   # Project documentation
-
+```
 ---
 
 ## 🛠️ Build Instructions
