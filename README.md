@@ -17,9 +17,9 @@
 
 ## 📁 Project Structure
 
+```
 TrafficSim/ 
 
-```
 ├── include/ # Header files (class declarations) │ 
 ├── Car.h │ \
 ├── Interface.h │ 
@@ -46,9 +46,11 @@ TrafficSim/
 
 To build and run the project, make sure you have a C++ compiler (like `g++`) and `make` installed.
 
+```
 - make              # Compiles the main simulation and test files
 - ./bin/main        # Runs the simulation
 - make clean        # Removes compiled binaries and object files
+```
 
 ---
 
