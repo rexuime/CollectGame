@@ -1,17 +1,19 @@
-# 🚦 TrafficSim
+# 🕹️ Simple C++ SFML Game
 
-**TrafficSim** is a C++ project designed to simulate different types of traffic intersections with realistic logic, rules, and signal cycles.
+A lightweight game built in C++ using **SFML** where the player moves around a 2D space using arrow keys, collects objects, and avoids obstacles or "monsters" that randomly appear and move across the screen.
+
+This project serves as both a **learning experience** in C++/OOP and an **intro to real-time 2D rendering** with SFML.
 
 ---
 
-## 💡 Features
+## 📦 Features
 
-- ✅ Multiple intersection types (starting with four-way intersections)
-- 🚗 Cars spawn from random directions with specific intentions: left, right, or straight
-- 🚦 Cars follow realistic traffic rules (e.g., left yields to straight)
-- 🟢 Traffic lights cycle through timed phases (e.g., NS green while EW red)
-- 📦 Clean project structure with header/source separation
-- 🛠️ Built using `make`, with support for expanding test cases
+- Arrow key movement for player
+- Object-oriented structure with inheritance
+- Randomly spawning collectibles and enemies
+- Grid-based game logic (with plans to support more)
+- Rendered in a resizable SFML window
+- Built using a Makefile for automation
 
 ---
 
@@ -21,20 +23,16 @@
 TrafficSim/ 
 
 ├── include/ # Header files (class declarations) │ 
-├── Car.h │ \
-├── Interface.h │ 
-├── Intersection.h │ 
-├── Simulation.h │ 
-└── TrafficLight.h 
+├── game.h │ 
+├── objects.h │ 
+└── window.h │ 
 
 ├── src/ # Source files (class definitions) │ 
-├── Car.cpp │ 
-├── Interface.cpp │ 
-├── Intersection.cpp │ 
-├── Simulation.cpp │ 
-└── TrafficLight.cpp 
+├── game.cpp │ 
+├── objects.cpp │ 
+└── window.cpp │ 
 
-├── tests/ # (Optional) Unit test files (e.g., test_car.cpp) 
+├── tests/ # (Optional) Unit test files (e.g., test_object.cpp) 
 
 ├── main.cpp   # Entry point for running the simulation 
 ├── Makefile   # Build configuration 
@@ -54,22 +52,28 @@ To build and run the project, make sure you have a C++ compiler (like `g++`) and
 
 ---
 
-## 🎯 Goals of This Project
-
-- Practice and reinforce core C++ skills
-- Build clean, modular, and maintainable code
-- Lay the foundation for more complex simulations in the future
-- Get comfortable using make, headers, and organizing larger projects
-- Experiment with logic-heavy systems (traffic flow, signaling, yielding)
+*You'll need to set up SFML yourself (headers, libs, and .dlls). Make sure your SFML version matches your compiler.*
 
 ---
 
-## 🔧 Possible Future Expansions
+## 🎯 Goals of This Project
 
-- Add more intersection types (e.g., T-junction, roundabout)
-- Implement pedestrian systems or sensor-based triggers
-- Include traffic congestion simulation and dynamic rerouting
-- Add visual output using SDL2 or ImGui
-- Integrate unit testing using Catch2 or a similar framework
+- Reinforce modern C++ concepts (OOP, smart pointers, modularity)
+- Build and organize a complete project using Make and headers
+- Practice real-time input handling and frame-by-frame logic
+- Explore basic game logic, state updates, and rendering
+- Lay a flexible foundation for more complex game ideas
+
+---
+
+## 🚀 Possible Future Expansions
+
+- Add enemy behavior (chasing, patrolling, etc.)
+- Add collectible types (powerups, hazards, score bonuses)
+- Create a simple UI or HUD for health/score
+- Add menus or pause functionality
+- Expand to tile-based maps or multiple levels
+- Introduce animations or sound effects
+- Integrate unit testing with Catch2
 
 ---

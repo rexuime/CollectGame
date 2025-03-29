@@ -1,37 +1,36 @@
-# Compiler and flags
+# ─── Compiler and Flags ─────────────────────────────────────────
 CXX := g++
-CXXFLAGS := -std=c++17 -Wall -Wextra -Iinclude
+CXXFLAGS := -std=c++17 -Wall -Wextra -Iinclude -ID:/Coding/Libraries/SFML/include
 
-# Make sure to uncomment all test lines once done with them
-
-# Directories
+# ─── Directories ────────────────────────────────────────────────
 SRC_DIR := src
-#TEST_DIR := tests
+# TEST_DIR := tests
 BIN_DIR := bin
 
-# Files
+# ─── Source and Test Files ──────────────────────────────────────
 SRC := $(wildcard $(SRC_DIR)/*.cpp)
-TESTS := $(wildcard $(TEST_DIR)/test_*.cpp)
+# TESTS := $(wildcard $(TEST_DIR)/test_*.cpp)
 
-# Executables
+# ─── Executables ────────────────────────────────────────────────
 MAIN_EXEC := $(BIN_DIR)/main
-#TEST_EXECS := $(patsubst $(TEST_DIR)/%.cpp,$(BIN_DIR)/%,$(TESTS))
+# TEST_EXECS := $(patsubst $(TEST_DIR)/%.cpp,$(BIN_DIR)/%,$(TESTS))
 
-# Default build target
-all: $(MAIN_EXEC) $(TEST_EXECS)
+# ─── SFML Libraries ─────────────────────────────────────────────
+LIBSFML := -LD:/Coding/Libraries/SFML/lib
+LIBS := -lsfml-graphics -lsfml-window -lsfml-system
 
-# Main program
+# ─── Build Everything ───────────────────────────────────────────
+all: $(MAIN_EXEC)
+# Add $(TEST_EXECS) above once tests are ready
+
+# ─── Main Program Build ─────────────────────────────────────────
 $(MAIN_EXEC): main.cpp $(SRC) | $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LIBSFML) $(LIBS)
 
-# Individual tests (uncomment once done writing)
-#$(BIN_DIR)/%: $(TEST_DIR)/%.cpp $(SRC) | $(BIN_DIR)
-#	$(CXX) $(CXXFLAGS) -o $@ $^
-
-# Make bin directory if it doesn't exist
+# ─── Create bin/ if it doesn’t exist ────────────────────────────
 $(BIN_DIR):
-	mkdir -p $(BIN_DIR)
+	-mkdir $(BIN_DIR)
 
-# Clean builds
+# ─── Clean ──────────────────────────────────────────────────────
 clean:
 	rm -rf $(BIN_DIR)
