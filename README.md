@@ -20,13 +20,15 @@
 TrafficSim/ 
 
 ├── include/ # Header files (class declarations) │ 
-├── Car.h │ 
+├── Car.h │ \
+├── Interface.h │ 
 ├── Intersection.h │ 
 ├── Simulation.h │ 
 └── TrafficLight.h 
 
 ├── src/ # Source files (class definitions) │ 
 ├── Car.cpp │ 
+├── Interface.cpp │ 
 ├── Intersection.cpp │ 
 ├── Simulation.cpp │ 
 └── TrafficLight.cpp 

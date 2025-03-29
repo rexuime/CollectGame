@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <array>
 #include <string>
 #include <memory>
 
@@ -10,7 +11,9 @@ enum class Turn { LEFT, RIGHT, STRAIGHT };
 
 class Car{
 
-    protected:
+    // TODO Implement thread variable for this class so each car is a separate entity
+
+    private:
 
         int ID;
         Direction spawnLocation;

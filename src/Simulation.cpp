@@ -8,6 +8,7 @@ void Simulation::RunSim(){
     std::cout << "Selection working!\n";
     return;
     // Main execution logic here
+    // TODO, get interface set up in terminal
 
 }
 
